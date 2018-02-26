@@ -1,0 +1,52 @@
+{
+
+	// Place your snippets for C++ here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Printf": {
+		"prefix": "printf",
+		"body":[
+			"printf(\"$1\\n\", $2);"
+		],
+		"description": "HaHa"
+	},
+	"FastRead": {
+		"prefix": "faster",
+		"body": [
+			"inline int read() {",
+			"\tint x = 0, f = 1; char ch = getchar();",
+			"\tfor (; ch < '0' | ch > '9'; ch = getchar()) ch == '-'?f = -1:0;",
+			"\tfor (; ch >= '0' & ch <= '9'; ch = getchar()) x = x * 10 + (ch ^ 48);",
+			"\treturn x * f;",
+			"}"
+		],
+		"description": "fast_read into data"
+	},
+	"Freopen": {
+		"prefix": "freopen",
+		"body": [
+			"freopen(\"$1.in\",\"r\",stdin);",
+			"freopen(\"$1.out\",\"w\",stdout);"
+		],
+	},
+	"Fprintf": {
+		"prefix": "fprintf",
+		"body": [
+			"fprintf(stderr, \"$1\\n\", $2);"
+		],
+	},
+	"C++ head": {
+		"prefix": "headfile", 
+		"body": [
+			"# include <set>",
+			"# include <map>",
+			"# include <time.h>",
+			"# include <stdio.h>",
+			"# include <cstring>",
+			"# include <stdlib.h>",
+			"# include <algorithm>",
+		],
+	}
+}

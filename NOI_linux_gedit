@@ -1,0 +1,7 @@
+#!/bin/sh  
+fullname=$GEDIT_CURRENT_DOCUMENT_NAME  
+name=`echo $fullname | cut -d. -f1`  
+suffix=`echo $fullname | cut -d. -f2`  
+dir=$GEDIT_CURRENT_DOCUMENT_DIR
+    g++ $fullname -o $name
+    gnome-terminal -x bash -c "$dir/$name; echo;echo 'press ENTER to continue';read"  
