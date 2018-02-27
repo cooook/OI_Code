@@ -73,7 +73,7 @@ inline void FFT(int *a, int *b, int *Ans, int p) {
     }
 }
 
-inline int Comb(int n, int m) {
+inline int Cobm(int n, int m) {
     if (n == m || !m) return 1;
     if (n < m) return 0;
     return 1ll * fac[n] * Inv[n - m] % mod * Inv[m] % mod;
@@ -86,7 +86,7 @@ int main() {
     for (int i = 1; i <= k; ++i) fac[i] = 1ll * fac[i - 1] * i % mod;
     Inv[k] = qpow(fac[k], mod - 2);
     for (int i = k - 1; i; --i) Inv[i] = 1ll * Inv[i + 1] * (i + 1) % mod;
-    for (int i = 1; i <= k; ++i) g[i] = Comb(k, i);  f[0] = 1; 
+    for (int i = 1; i <= k; ++i) g[i] = Cobm(k, i);  f[0] = 1; 
     Init(k + 1); 
     int t = 2; 
     for (; n; n >>= 1, FFT(g, g, g, t), t = 1ll * t * t % mod)

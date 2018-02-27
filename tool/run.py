@@ -1,8 +1,17 @@
 import os
 
-i = 13
+cnt = 0;
 
-while i <= 20 : 
-    os.system("maker > easy_problem" + str(i) + ".in");
-    os.system("std < easy_problem" + str(i) + ".in > easy_problem" + str(i) + ".out");
-    i += 1;
+os.system("g++ 233.cpp -o 233");
+os.system("g++ maker.cpp -o maker");
+os.system("g++ bl.cpp -o bl");
+
+while True : 
+    os.system("maker");
+    os.system("bl.exe");
+    os.system("233.exe");
+    if os.system("fc bl.out Cooook.out") : 
+        print "Wrong_Answer!";
+        exit();
+    cnt += 1;
+    print "test {test_num} pass!".format(test_num = cnt);

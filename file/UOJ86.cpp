@@ -80,12 +80,18 @@ inline void Init(int n) {
     for (int i = 2; i <= N; ++i) w[i] = 1ll * w[i - 1] * w[1] % mod;
 }
 
+inline int get_bit(Type x) {
+    int cc = 0;
+    while (x) ++ cc, x /= p;
+    return cc;
+}
+
 inline void Init() {
     Get(); 
 
     Type QAQ = n; while (QAQ) T[++tot] = QAQ % p, QAQ /= p;
     
-    fac[0] = 1; Inv[0] = 1;
+    fac[0] = 1; Inv[0] = 1; Len = get_bit(r); Len = std::max(Len, tot);
     
     for (int i = 1; i < p; ++i) fac[i] = fac[i - 1] * i % p; 
     
@@ -103,8 +109,7 @@ inline void Dp(Type n, int val) {
     f[0] = 1; g[0] = 1;
     memset(digit, 0, sizeof digit);
     cnt = 0; 
-    while (n) digit[++cnt] = n % p, n /= p; 
-    Len = std::max(cnt, tot);
+    while (n) digit[++cnt] = n % p, n /= p;
     for (int i = 1; i <= Len; ++i) {
         for (int j = 0; j < N; ++j) tmp1[j] = tmp2[j] = 0;
         last = 0;
@@ -136,7 +141,9 @@ int main() {
     l = read<Type>() - 1, r = read<Type>();
     Ans[0] = (r - l) % mod;
     Init();
-    Dp(r, 1), Dp(l, -1);
+
+    Dp(r, 1); 
+    Dp(l, -1);
     for (int i = 1; i <= p - 1; ++i) (Ans[0] -= ((Ans[i] += mod) %= mod)) %= mod;
     (Ans[0] += mod) %= mod;
     for (int i = 0; i <= p - 1; ++i) printf("%d\n", Ans[i]);
