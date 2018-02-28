@@ -16,13 +16,26 @@
 		"prefix": "faster",
 		"body": [
 			"inline int read() {",
-			"\tint x = 0, f = 1; char ch = getchar();",
-			"\tfor (; ch < '0' | ch > '9'; ch = getchar()) ch == '-'?f = -1:0;",
-			"\tfor (; ch >= '0' & ch <= '9'; ch = getchar()) x = x * 10 + (ch ^ 48);",
+			"\tregister int x = 0, f = 1; char ch = getchar();",
+			"\tfor (; !isdigit(ch); ch = getchar()) if (ch == '-') f = -f;",
+			"\tfor (; isdigit(ch); ch = getchar()) x = x * 10 + (ch ^ 48);",
 			"\treturn x * f;",
 			"}"
 		],
 		"description": "fast_read into data"
+	},
+	"Fread_FastRead" : {
+		"prefix": "ffaster",
+		"body": [
+			"char xB[1 << 15], *xS = xB, *xT = xB;",
+			"# define getc (xS == xT && (xT = (xS = xB) + fread(xB, 1, 1 << 15, stdin), xS == xT) ? 0 : *xS++)",
+			"inline int read() {",
+			"\tregister int x = 0, f = 1; char ch = getc;",
+			"\tfor (; !isdigit(ch); ch = getc) if (ch == '-') f = -f;",
+			"\tfor (; isdigit(ch); ch = getc) x = x * 10 + (ch ^ 48);",
+			"\treturn x * f;",
+			"}"
+		]
 	},
 	"Freopen": {
 		"prefix": "freopen",
