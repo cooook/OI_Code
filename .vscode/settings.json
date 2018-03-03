@@ -63,7 +63,8 @@
         "cstddef": "cpp",
         "cuchar": "cpp",
         "numeric": "cpp",
-        "shared_mutex": "cpp"
+        "shared_mutex": "cpp",
+        "memory_resource": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
     "C_Cpp.errorSquiggles": "Disabled",
