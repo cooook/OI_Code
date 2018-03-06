@@ -56,9 +56,11 @@
 			"# include <set>",
 			"# include <map>",
 			"# include <time.h>",
+			"# include <math.h>",
 			"# include <stdio.h>",
 			"# include <cstring>",
 			"# include <stdlib.h>",
+			"# include <iostream>",
 			"# include <algorithm>",
 		],
 	}
