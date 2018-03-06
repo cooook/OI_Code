@@ -71,7 +71,8 @@ inline void build(node *&o, int l, int r) {
 }
 
 inline void Update(node *o, int x, int y, int val) {
-    if (x <= o -> l && o -> r <= y) return o -> M_Change(val, val), o -> Change(val, val), void();
+    if (x <= o -> l && o -> r <= y)
+        return o -> M_Change(val, val), o -> Change(val, val), void();
     register int mid = o -> l + o -> r >> 1;
     o -> Push_down();
     if (x <= mid) Update(o -> ls, x, y, val);
