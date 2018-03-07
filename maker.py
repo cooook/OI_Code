@@ -1,35 +1,20 @@
-from os import system
-from random import * 
-
-f = open("Cooook.in", "w");
-
-n = 100;
-m = 100;
-data_mx = 10;
-
-print >> f, n;
-
-i = 1;
-while i <= n:
-    print >> f, randint(-data_mx, data_mx),
-    i += 1;
-print >> f, '\n', 
-
-print >> f, m; 
+from random import *
 
 
-i = 1;
-while i <= m:
-    opt = randint(1, 6);
-    l = randint(1, n);
-    r = randint(1, n);
-    if l > r:
-        l ^= r;
-        r ^= l;
-        l ^= r; 
-    if opt <= 3:
-        print >> f, opt, l, r, randint(-data_mx, data_mx);
-    else :
-        print >> f, opt, l, r; 
-    i += 1;
-f.close();
+f = open("Cooook.in", "w"); 
+
+
+n = 1000;
+k = randint(1, n);
+max_data = 1e5; 
+
+print >> f, n, k;
+
+for i in range(1, n + 1):
+    print >> f, randint(1, max_data),
+
+print >> f, "\n",
+
+
+for i in range(2, n + 1):
+    print >> f, randint(1, i - 1), i;
