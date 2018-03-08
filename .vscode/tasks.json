@@ -6,7 +6,7 @@
         {
             "label": "g++",
             "type": "shell",
-            "command": "g++ -lm -g -Wl,--stack=102400000 -DMine -o \"${fileDirname}/${fileBasenameNoExtension}\" \"${file}\"",
+            "command": "g++ -lm -g -Wl,--stack=102400000 -DMine -std=c++11 -o \"${fileDirname}/${fileBasenameNoExtension}\" \"${file}\"",
             "presentation": {
                 "echo": false,
                 "reveal": "silent",
