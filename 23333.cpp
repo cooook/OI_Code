@@ -56,6 +56,8 @@ inline void Update(RG int x, RG int w) {
 }
  
 int main() {
+    // freopen("T3.in","r",stdin);
+    // freopen("T3.out","w",stdout);
     n = read();
     for (RG int i = 1; i <= n; ++i) val[i] = -1; 
     for (register int i = 1; i < n; ++i) {
@@ -68,5 +70,6 @@ int main() {
  
     for (RG int i = 1; i < n; ++i) Update(pos[E[i].id], E[i].w);
     printf("%lld\n", Ans);
+    // while (true); 
     return 0;
 }

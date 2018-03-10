@@ -10,7 +10,7 @@ inline int find(int x) {
 int main() {
     freopen("T3.in" ,"w", stdout);
     srand(time(NULL)); 
-    n = 3000;
+    n = 100;
     printf("%d\n", n);
     for (int i = 1; i <= n; ++i) fa[i] = i; 
     for (int i = 1; i < n; ++i) {
