@@ -36,5 +36,5 @@ def Change(x):
 
 for i in range(0, len(f)):
     for j in range(0, len(f[i])):
-        Change(f[i][j]);
-        # print >> out, f[i][j]; 
+        # Change(f[i][j]);
+        print >> out, f[i][j]; 

@@ -2,8 +2,6 @@
 <NotepadPlus>
     <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\hzoi\Desktop\Blog\source\_posts\2018-01-27.md" />
-        <File filename="C:\Users\hzoi\Desktop\Blog\.drone.yml" />
         <File filename="C:\Users\hzoi\Desktop\hszxzyf\exclaim\exclaim.cpp" />
         <File filename="C:\Users\hzoi\Downloads\live2d\live2d\model\pio\motions\Touch Dere2.mtn" />
         <File filename="C:\Users\hzoi\Desktop\OI_code\exam\2018.3.3\E.cpp" />
@@ -12,6 +10,8 @@
         <File filename="C:\Users\hzoi\Desktop\OI_code\BZOJ3716.cpp" />
         <File filename="C:\Users\hzoi\Desktop\user.rule" />
         <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sports2.in" />
+        <File filename="C:\Users\hzoi\2333\data\4449\01" />
+        <File filename="C:\Users\hzoi\2333\data\4449\01.a" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
