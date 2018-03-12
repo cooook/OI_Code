@@ -2,15 +2,15 @@ import os
 
 cnt = 0;
 
-os.system("g++ maker.cpp -o maker -Wl,--stack=1024000000");
-os.system("g++ T2.cpp -o T2 -Wl,--stack=1024000000");
-os.system("g++ tmp.cpp -o tmp -Wl,--stack=1024000000");
+# os.system("g++ maker.cpp -o maker -Wl,--stack=1024000000");
+os.system("g++ C.cpp -o C -Wl,--stack=1024000000");
+os.system("g++ T3_bl.cpp -o T3_bl -Wl,--stack=1024000000");
 
 while True:
-    os.system("maker.exe");
-    os.system("T2.exe");
-    os.system("tmp.exe");
-    if os.system("fc bl.out Cooook.out"):
+    os.system("python T3_maker.py");
+    os.system("C.exe");
+    os.system("T3_bl.exe");
+    if os.system("fc bl.out T3.out"):
         print "Wrong_Answer!";
         exit();
     cnt += 1;

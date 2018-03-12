@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <NotepadPlus>
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="yes" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no">
+        <Filter name="" />
+        <Find name="2 0" />
+        <Replace name="" />
+    </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\hzoi\Desktop\hszxzyf\exclaim\exclaim.cpp" />
-        <File filename="C:\Users\hzoi\Downloads\live2d\live2d\model\pio\motions\Touch Dere2.mtn" />
-        <File filename="C:\Users\hzoi\Desktop\OI_code\exam\2018.3.3\E.cpp" />
         <File filename="C:\Users\hzoi\Desktop\1.cpp" />
         <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sports2.ans" />
         <File filename="C:\Users\hzoi\Desktop\OI_code\BZOJ3716.cpp" />
@@ -12,6 +13,9 @@
         <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sports2.in" />
         <File filename="C:\Users\hzoi\2333\data\4449\01" />
         <File filename="C:\Users\hzoi\2333\data\4449\01.a" />
+        <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\game2.in" />
+        <File filename="C:\Users\hzoi\Desktop\OI_code\T1.in" />
+        <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sequence2.in" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -20,7 +24,7 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-2" y="92" width="1100" height="714" isMaximized="no" />
+        <GUIConfig name="AppPosition" x="11" y="7" width="1100" height="714" isMaximized="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20180315">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
         <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
