@@ -6,16 +6,16 @@
         <Replace name="" />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sports2.ans" />
-        <File filename="C:\Users\hzoi\Desktop\OI_code\BZOJ3716.cpp" />
-        <File filename="C:\Users\hzoi\Desktop\user.rule" />
-        <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sports2.in" />
-        <File filename="C:\Users\hzoi\2333\data\4449\01" />
-        <File filename="C:\Users\hzoi\2333\data\4449\01.a" />
-        <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\game2.in" />
-        <File filename="C:\Users\hzoi\Desktop\OI_code\T1.in" />
         <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sequence2.in" />
         <File filename="C:\Users\hzoi\Desktop\OI_code\T1.out" />
+        <File filename="C:\Users\hzoi\Desktop\T3\44.in" />
+        <File filename="C:\Users\hzoi\.vimrc" />
+        <File filename="C:\Users\hzoi\Desktop\problem.php@cid=1107" />
+        <File filename="C:\Users\hzoi\Desktop\status.php@problem_id=" />
+        <File filename="E:\vim\vim80\gvim.exe" />
+        <File filename="C:\Users\hzoi\Downloads\trans.cpp" />
+        <File filename="C:\Users\hzoi\Downloads\T2.cpp" />
+        <File filename="C:\Users\hzoi\Desktop\T3\20.in" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -24,8 +24,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-6" y="44" width="1100" height="714" isMaximized="no" />
-        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20180315">no</GUIConfig>
+        <GUIConfig name="AppPosition" x="260" y="1" width="1100" height="714" isMaximized="no" />
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20180330">no</GUIConfig>
         <GUIConfig name="Auto-detection">yes</GUIConfig>
         <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
         <GUIConfig name="TrayIcon">no</GUIConfig>
