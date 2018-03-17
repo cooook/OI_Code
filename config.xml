@@ -6,9 +6,6 @@
         <Replace name="" />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\hzoi\Desktop\&#x4E0B;&#x53D1;\sample\sequence2.in" />
-        <File filename="C:\Users\hzoi\Desktop\OI_code\T1.out" />
-        <File filename="C:\Users\hzoi\Desktop\T3\44.in" />
         <File filename="C:\Users\hzoi\.vimrc" />
         <File filename="C:\Users\hzoi\Desktop\problem.php@cid=1107" />
         <File filename="C:\Users\hzoi\Desktop\status.php@problem_id=" />
@@ -16,6 +13,9 @@
         <File filename="C:\Users\hzoi\Downloads\trans.cpp" />
         <File filename="C:\Users\hzoi\Downloads\T2.cpp" />
         <File filename="C:\Users\hzoi\Desktop\T3\20.in" />
+        <File filename="C:\Users\hzoi\Desktop\Blog\scaffolds\page.md" />
+        <File filename="C:\Users\hzoi\Desktop\Blog\scaffolds\draft.md" />
+        <File filename="C:\Users\hzoi\Desktop\Blog\scaffolds\post.md" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
