@@ -40,7 +40,6 @@ inline int Link1(const RG int &x, const RG int &c) {
 }
 
 inline int Link2(RG int x, RG int c) {
-    // printf("x = %d cnt2 = %d\n", x, cnt2);
     f[++cnt2][0] = x; d[cnt2][0] = c + 1;
     for (int i = 1; i <= 17; ++i)
         f[cnt2][i] = f[f[cnt2][i  - 1]][i - 1], 

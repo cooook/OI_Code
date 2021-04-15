@@ -32,6 +32,7 @@ inline void read_char(char &ch) {
 
 struct Pig{
     int id,cnt,Hp,Has_zhuge; char Card[2005]; bool used[2005];
+
     inline void in(){
         char s[10];
         scanf("%s",s + 1);
@@ -41,6 +42,7 @@ struct Pig{
         cnt = 4; Hp = 4; Has_zhuge = 0;
         for (int i = 1; i <= 4; i++) read_char(Card[i]);
     }
+
     inline void out(){
         printf("Hp = %d\n",Hp);
         printf("id = %d\n",id);
@@ -51,9 +53,11 @@ struct Pig{
         puts(""); puts("");
     }
     inline char& operator [] (const int &a) {return Card[a];}
+
     inline void G_Card(int num){
         while (num --) Card[++cnt] = New_Card;
     }
+
     inline int Has(char ch) {for (int i = 1; i <= cnt; i++) if (!used[i] && Card[i] == ch) return i; return false;}  
 }pig[20];
 
@@ -406,9 +410,9 @@ inline bool Running_Game(int &x){
 
 int main() {
     
-    freopen("kopk.in","r",stdin);
+    // freopen("kopk.in","r",stdin);
     
-    freopen("kopk.out","w",stdout);
+    // freopen("kopk.out","w",stdout);
 
     n = read<int>(); m = read<int>();
     
@@ -418,9 +422,12 @@ int main() {
     
         if (pig[i].id == 1) MP_id = i;
     
-    } Judge[MP_id] = true;
+    } 
     
-    for (int i = 1; i <= m; i++) read_char(Tot_Card[i]);
+    Judge[MP_id] = true;
+    
+    for (int i = 1; i <= m; i++) 
+        read_char(Tot_Card[i]);
     
     register int now = MP_id;
     

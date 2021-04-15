@@ -3,55 +3,19 @@
         {
             "name": "Win32",
             "includePath": [
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/c++",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/c++/mingw32",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/c++/tr1",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/ssp",
-                "E:/mingw32/include",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/ssp",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/mingw32",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/c++/tr1",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/ssp",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/c++",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/c++/mingw32",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/c++/tr1",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/ssp",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/ssp",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/c++",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/c++/mingw32",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/c++/tr1",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/ssp",
-                "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include",
-                "${workspaceRoot}"
+                "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\include",
+                "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\lib\\gcc\\i686-w64-mingw32\\8.1.0\\include",
+                "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\lib\\gcc\\i686-w64-mingw32\\8.1.0\\include\\c++"
             ],
-            "defines": [],
-            "browse": {
-                "path": [
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/c++",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/c++/tr1",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/c++/mingw32",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.2.0/include/include/ssp",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/c++",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/c++/tr1",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/c++/mingw32",
-                    "E:/mingw32/lib/gcc/i686-w64-mingw32/7.1.0/include/include/ssp",
-                    "${workspaceRoot}"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            },
-            "intelliSenseMode": "msvc-x64"
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++",
+            "cppStandard": "c++11"
         }
     ],
-    "version": 3
+    "version": 4
 }

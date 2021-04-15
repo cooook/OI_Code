@@ -1,5 +1,5 @@
 // antbuster by Cooook.
-#pragma GCC optimize("O3")
+// #pragma GCC optimize("O3")
 #include <bits/stdc++.h>
 #define LIMIT_ANT 6
 
@@ -341,7 +341,7 @@ inline void Cake_Checker() {
 
 inline void Ant_Pos_Print() {
 
-    puts("---------------something about Ant------------------------");
+    // puts("---------------something about Ant------------------------");
 
     for (int i = 1; i <= Ant_Num; i++)
 
@@ -359,15 +359,15 @@ inline void Running_Game() {
 
     Attack();
 
-    Cake_Checker();
+    // Cake_Checker();
 
-    Ant_Pos_Print();
+    // Ant_Pos_Print();
 }
 
 // Ant 155 is wrong 
 
 int main () {
-    freopen("antbuster_ex2.in","r",stdin);
+    // freopen("antbuster_ex2.in","r",stdin);
     // freopen("antbuster_ex.out","w",stdout);
     // freopen("my.out","w",stdout);
 
@@ -390,7 +390,7 @@ int main () {
     Time = read<int>(); NOW_TIME = 1;
 
     for (; NOW_TIME <= Time; NOW_TIME ++) {
-        printf("------------------Now time is %d------------------\n",NOW_TIME);
+        // printf("------------------Now time is %d------------------\n",NOW_TIME);
         
         Running_Game();
     }

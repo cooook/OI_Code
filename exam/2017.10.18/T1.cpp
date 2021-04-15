@@ -19,13 +19,13 @@ inline char read_char() {
     return ch;
 }
 
-inline void KMP(char *s,int *fail) {
+inline void KMP(char *s,int *next) {
     int fix = 0;
-    fail[0] = 0;
+    next[0] = 0;
     for (int i = 1; s[i]; i++) {
-        while (fix && s[fix] != s[i]) fix = fail[fix - 1];
+        while (fix && s[fix] != s[i]) fix = next[fix - 1];
         if (s[fix] == s[i]) fix ++;
-        fail[i] = fix;
+        next[i] = fix;
     }
 } 
 

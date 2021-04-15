@@ -49,16 +49,16 @@ int srmark[10];
 int tmark[10];
 int profession[10];
 char pname[][10]={
-    "","Õ½Ê¿","¹­¼ıÊÖ","Ä§·¨Ê¦","ÆïÊ¿","Î×Ê¦","ÄÁÊ¦"
+    "","æˆ˜å£«","å¼“ç®­æ‰‹","é­”æ³•å¸ˆ","éª‘å£«","å·«å¸ˆ","ç‰§å¸ˆ"
 };
 char pdescribe[][200]={
     "",
-    "Õ½Ê¿£¬½üÕ½ĞÍÖ°Òµ£¬ÓµÓĞÇ¿´óµÄÌåÄÜÓë½ø¹¥ÄÜÁ¦\nÌØÊâÄÜÁ¦£º¹¥»÷Á¦+1",
-    "¹­¼ıÊÖ£¬Ô¶³ÌĞÍÖ°Òµ£¬¾ßÓĞ¼«Ç¿µÄÔ¶³ÌÉä»÷ÄÜÁ¦\nÌØÊâÄÜÁ¦£º¿ÉÒÔ¶Ô½ÇÏß¹¥»÷»ò¸ôÒ»¸ñ¹¥»÷£¬¿ÉÒÔĞ±½ÇÒÆ¶¯£¬ÎŞ·¨½üÉí¹¥»÷",
-    "Ä§·¨Ê¦£¬Ä§·¨ĞÍÖ°Òµ£¬¾ßÓĞÁé»îµÄÄ§Á¦ºÍ¾«ÉñÁ¦\nÌØÊâÄÜÁ¦£º¿ÉÒÔ½øĞĞĞîÁ¦£¬ĞîÁ¦ºó¿ÉÒÔµÖÏûÒ»´Î¹¥»÷£¬Ò²¿ÉÒÔÖ÷¶¯Ê©·ÅÔì³ÉÁ½µãÉËº¦",
-    "ÆïÊ¿£¬ÖĞ³Ì½üÕ½Ö°Òµ£¬¾ßÓĞ¾«Á¼µÄ×°±¸ºÍÓÅÖÊµÄ×øÆï\nÌØÊâÄÜÁ¦£ºÒÆ¶¯ËÙ¶È+1£¬¹¥»÷¾àÀë+1",
-    "Î×Ê¦£¬ÏûºÄĞÍÖ°Òµ£¬¾ßÓĞ¿Ö²ÀµÄÏûºÄÄÜÁ¦\nÌØÊâÄÜÁ¦£º¹¥»÷¾àÀë+1£¬½üÉí¹¥»÷¿ÉÒÔÔì³É1»ØºÏ¶¾Ğ§¹û£¬ÖĞ¶¾µÄ¶ÔÊÖÃ¿»ØºÏÉúÃü-1",
-    "ÄÁÊ¦£¬»Ø¸´ĞÍÖ°Òµ£¬¾ßÓĞ¸ß³¬µÄ»Ø¸´¼¼ÇÉ\nÌØÊâÄÜÁ¦£º¿ÉÒÔ»Ø¸´¹¥»÷·¶Î§ÄÚµÄÈÎºÎÈËµÄ1µÄÉúÃü²¢½â³ı¶¾Ğ§¹û£¬ÎŞ·¨¹¥»÷"
+    "æˆ˜å£«ï¼Œè¿‘æˆ˜å‹èŒä¸šï¼Œæ‹¥æœ‰å¼ºå¤§çš„ä½“èƒ½ä¸è¿›æ”»èƒ½åŠ›\nç‰¹æ®Šèƒ½åŠ›ï¼šæ”»å‡»åŠ›+1",
+    "å¼“ç®­æ‰‹ï¼Œè¿œç¨‹å‹èŒä¸šï¼Œå…·æœ‰æå¼ºçš„è¿œç¨‹å°„å‡»èƒ½åŠ›\nç‰¹æ®Šèƒ½åŠ›ï¼šå¯ä»¥å¯¹è§’çº¿æ”»å‡»æˆ–éš”ä¸€æ ¼æ”»å‡»ï¼Œå¯ä»¥æ–œè§’ç§»åŠ¨ï¼Œæ— æ³•è¿‘èº«æ”»å‡»",
+    "é­”æ³•å¸ˆï¼Œé­”æ³•å‹èŒä¸šï¼Œå…·æœ‰çµæ´»çš„é­”åŠ›å’Œç²¾ç¥åŠ›\nç‰¹æ®Šèƒ½åŠ›ï¼šå¯ä»¥è¿›è¡Œè“„åŠ›ï¼Œè“„åŠ›åå¯ä»¥æŠµæ¶ˆä¸€æ¬¡æ”»å‡»ï¼Œä¹Ÿå¯ä»¥ä¸»åŠ¨æ–½æ”¾é€ æˆä¸¤ç‚¹ä¼¤å®³",
+    "éª‘å£«ï¼Œä¸­ç¨‹è¿‘æˆ˜èŒä¸šï¼Œå…·æœ‰ç²¾è‰¯çš„è£…å¤‡å’Œä¼˜è´¨çš„åéª‘\nç‰¹æ®Šèƒ½åŠ›ï¼šç§»åŠ¨é€Ÿåº¦+1ï¼Œæ”»å‡»è·ç¦»+1",
+    "å·«å¸ˆï¼Œæ¶ˆè€—å‹èŒä¸šï¼Œå…·æœ‰ææ€–çš„æ¶ˆè€—èƒ½åŠ›\nç‰¹æ®Šèƒ½åŠ›ï¼šæ”»å‡»è·ç¦»+1ï¼Œè¿‘èº«æ”»å‡»å¯ä»¥é€ æˆ1å›åˆæ¯’æ•ˆæœï¼Œä¸­æ¯’çš„å¯¹æ‰‹æ¯å›åˆç”Ÿå‘½-1",
+    "ç‰§å¸ˆï¼Œå›å¤å‹èŒä¸šï¼Œå…·æœ‰é«˜è¶…çš„å›å¤æŠ€å·§\nç‰¹æ®Šèƒ½åŠ›ï¼šå¯ä»¥å›å¤æ”»å‡»èŒƒå›´å†…çš„ä»»ä½•äººçš„1çš„ç”Ÿå‘½å¹¶è§£é™¤æ¯’æ•ˆæœï¼Œæ— æ³•æ”»å‡»"
 };
 void divide()
 {
@@ -125,7 +125,7 @@ void choose_profession()
         }while(mark[t]);
         mark[t]=1;
         system("cls");
-        printf("ÇëÍæ¼Ò%sÑ¡ÔñÖ°Òµ:\n",player[t].name);
+        printf("è¯·ç©å®¶%sé€‰æ‹©èŒä¸š:\n",player[t].name);
         for(j=1;j<=6;j++)
         {
             if(!profession[j])
@@ -133,14 +133,14 @@ void choose_profession()
                 printf("%d-%s ",j,pname[j]);
             }
         }
-        printf("7-Ö°Òµ½éÉÜ\n");
+        printf("7-èŒä¸šä»‹ç»\n");
         inputf(m);
         while(m<1||m>6||(*(profession+m)))
         {
             if(m==7)
             {
                 system("cls");
-                printf("ÇëÊäÈëÄúÏë²é¿´µÄÖ°Òµ\n");
+                printf("è¯·è¾“å…¥æ‚¨æƒ³æŸ¥çœ‹çš„èŒä¸š\n");
                 for(j=1;j<=6;j++)
                 {
                     printf("%d-%s ",j,pname[j]);
@@ -153,7 +153,7 @@ void choose_profession()
                 }
                 system("cls");
                 puts(pdescribe[x]);
-                printf("ÇëÑ¡ÔñÖ°Òµ:\n");
+                printf("è¯·é€‰æ‹©èŒä¸š:\n");
                 for(j=1;j<=6;j++)
                 {
                     if(!profession[j])
@@ -161,7 +161,7 @@ void choose_profession()
                         printf("%d-%s ",j,pname[j]);
                     }
                 }   
-                printf("7-Ö°Òµ½éÉÜ\n");
+                printf("7-èŒä¸šä»‹ç»\n");
                 inputf(m);
             }
             else
@@ -199,21 +199,21 @@ void psc()
     system("cls");
     for(i=1;i<=n;i++)
     {
-        printf("%s ¶ÓÎé%d Lv.%d %s HP:%d/%d",player[i].name,player[i].team,player[i].lv,pname[player[i].p],player[i].hp,player[i].maxhp);
+        printf("%s é˜Ÿä¼%d Lv.%d %s HP:%d/%d",player[i].name,player[i].team,player[i].lv,pname[player[i].p],player[i].hp,player[i].maxhp);
         if(player[i].p!=6)
-        printf(" ¹¥»÷Á¦£º");
+        printf(" æ”»å‡»åŠ›ï¼š");
         else
-        printf(" »Ø¸´Á¦£º"); 
+        printf(" å›å¤åŠ›ï¼š"); 
         printf("%d",player[i].attack);
         if(player[i].p==3)
-        printf(" Ä§·¨¹¥»÷Á¦£º%d",player[i].mattack+2);
+        printf(" é­”æ³•æ”»å‡»åŠ›ï¼š%d",player[i].mattack+2);
         if(!deathmark[i])
         {
-            if(player[i].power) printf(" ĞîÆø");
-            if(player[i].poison) printf(" ¶¾");
+            if(player[i].power) printf(" è“„æ°”");
+            if(player[i].poison) printf(" æ¯’");
         }
         else
-        printf(" ËÀÍö");
+        printf(" æ­»äº¡");
         printf("\n");
     }
     memset(produced_map,0,sizeof(produced_map));
@@ -222,7 +222,7 @@ void psc()
         strcat(produced_map[i],"                    ");
         for(j=1;j<=20;j++)
         {
-            if(!map[i][j]) strcat(produced_map[i],"¡õ");
+            if(!map[i][j]) strcat(produced_map[i],"â–¡");
             else strcat(produced_map[i],player[map[i][j]].name);
         }
     }
@@ -235,63 +235,63 @@ void pmm()
     int i;
     memset(produced_menu,0,sizeof(produced_menu));
     system("cls");
-    strcpy(produced_menu[1],"¨X¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨[");
-    strcpy(produced_menu[2],"¨d¨p¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨p¨g");
-    strcpy(produced_menu[3],"¨d¨g                                                                        ¨d¨g");
-    strcpy(produced_menu[4],"¨d¨g                                                                        ¨d¨g");
-    strcpy(produced_menu[6],"¨d¨g                      »¶Ó­À´µ½ ÍêÃÀÊÀ½ç Ver 1.0.0!                      ¨d¨g");
-    strcpy(produced_menu[5],"¨d¨g                                                                        ¨d¨g");
-    strcpy(produced_menu[7],"¨d¨g                                                                        ¨d¨g");
-    strcpy(produced_menu[8],"¨d¨g                                                                        ¨d¨g");
-    strcpy(produced_menu[9],"¨d¨g                                                                        ¨d¨g");
+    strcpy(produced_menu[1],"â•”â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•—");
+    strcpy(produced_menu[2],"â• â•¬â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•¬â•£");
+    strcpy(produced_menu[3],"â• â•£                                                                        â• â•£");
+    strcpy(produced_menu[4],"â• â•£                                                                        â• â•£");
+    strcpy(produced_menu[6],"â• â•£                      æ¬¢è¿æ¥åˆ° å®Œç¾ä¸–ç•Œ Ver 1.0.0!                      â• â•£");
+    strcpy(produced_menu[5],"â• â•£                                                                        â• â•£");
+    strcpy(produced_menu[7],"â• â•£                                                                        â• â•£");
+    strcpy(produced_menu[8],"â• â•£                                                                        â• â•£");
+    strcpy(produced_menu[9],"â• â•£                                                                        â• â•£");
     if(mmflag==1)
     {
-        strcpy(produced_menu[10],"¨d¨g                           ¨                                           ¨d¨g");
-        strcpy(produced_menu[11],"¨d¨g                           ¨ ĞÂÓÎÏ·                                    ¨d¨g");
+        strcpy(produced_menu[10],"â• â•£                           â—£                                           â• â•£");
+        strcpy(produced_menu[11],"â• â•£                           â—¤ æ–°æ¸¸æˆ                                    â• â•£");
     }
     else
     {
-        strcpy(produced_menu[10],"¨d¨g                                                                        ¨d¨g");
-        strcpy(produced_menu[11],"¨d¨g                              ĞÂÓÎÏ·                                    ¨d¨g");
+        strcpy(produced_menu[10],"â• â•£                                                                        â• â•£");
+        strcpy(produced_menu[11],"â• â•£                              æ–°æ¸¸æˆ                                    â• â•£");
     }
-    strcpy(produced_menu[12],"¨d¨g                                                                        ¨d¨g");
+    strcpy(produced_menu[12],"â• â•£                                                                        â• â•£");
     if(mmflag==2)
     {
-        strcpy(produced_menu[13],"¨d¨g                           ¨                                           ¨d¨g");
-        strcpy(produced_menu[14],"¨d¨g                           ¨¼ÌĞøÓÎÏ·                                   ¨d¨g");
+        strcpy(produced_menu[13],"â• â•£                           â—£                                           â• â•£");
+        strcpy(produced_menu[14],"â• â•£                           â—¤ç»§ç»­æ¸¸æˆ                                   â• â•£");
     }
     else
     {
-        strcpy(produced_menu[13],"¨d¨g                                                                        ¨d¨g");
-        strcpy(produced_menu[14],"¨d¨g                             ¼ÌĞøÓÎÏ·                                   ¨d¨g");
+        strcpy(produced_menu[13],"â• â•£                                                                        â• â•£");
+        strcpy(produced_menu[14],"â• â•£                             ç»§ç»­æ¸¸æˆ                                   â• â•£");
     }
-    strcpy(produced_menu[15],"¨d¨g                                                                        ¨d¨g");
+    strcpy(produced_menu[15],"â• â•£                                                                        â• â•£");
     if(mmflag==3)
     {
-        strcpy(produced_menu[16],"¨d¨g                           ¨                                           ¨d¨g");
-        strcpy(produced_menu[17],"¨d¨g                           ¨ÓÎÏ·½éÉÜ                                   ¨d¨g");
+        strcpy(produced_menu[16],"â• â•£                           â—£                                           â• â•£");
+        strcpy(produced_menu[17],"â• â•£                           â—¤æ¸¸æˆä»‹ç»                                   â• â•£");
     }
     else
     {
-        strcpy(produced_menu[16],"¨d¨g                                                                        ¨d¨g");
-        strcpy(produced_menu[17],"¨d¨g                             ÓÎÏ·½éÉÜ                                   ¨d¨g");
+        strcpy(produced_menu[16],"â• â•£                                                                        â• â•£");
+        strcpy(produced_menu[17],"â• â•£                             æ¸¸æˆä»‹ç»                                   â• â•£");
     }
-    strcpy(produced_menu[18],"¨d¨g                                                                        ¨d¨g");
+    strcpy(produced_menu[18],"â• â•£                                                                        â• â•£");
     if(mmflag==4)
     {
-        strcpy(produced_menu[19],"¨d¨g                           ¨                                           ¨d¨g");
-        strcpy(produced_menu[20],"¨d¨g                           ¨  ÍË³ö                                     ¨d¨g");
+        strcpy(produced_menu[19],"â• â•£                           â—£                                           â• â•£");
+        strcpy(produced_menu[20],"â• â•£                           â—¤  é€€å‡º                                     â• â•£");
     }
     else
     {
-        strcpy(produced_menu[19],"¨d¨g                                                                        ¨d¨g");
-        strcpy(produced_menu[20],"¨d¨g                               ÍË³ö                                     ¨d¨g");
+        strcpy(produced_menu[19],"â• â•£                                                                        â• â•£");
+        strcpy(produced_menu[20],"â• â•£                               é€€å‡º                                     â• â•£");
     }
-    strcpy(produced_menu[21],"¨d¨g                                                                        ¨d¨g");
-    strcpy(produced_menu[22],"¨d¨g                                                            ×÷Õß:PoPoQQQ¨d¨g");
-    strcpy(produced_menu[23],"¨d¨p¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨j¨p¨g");
-    strcpy(produced_menu[24],"¨^¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨m¨a");
-    strcpy(produced_menu[25],"²Ù×÷·½·¨£º ¡ü¡ı¼üÒÆ¶¯¹â±ê Z¼üÈ·¶¨");
+    strcpy(produced_menu[21],"â• â•£                                                                        â• â•£");
+    strcpy(produced_menu[22],"â• â•£                                                            ä½œè€…:PoPoQQQâ• â•£");
+    strcpy(produced_menu[23],"â• â•¬â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¦â•¬â•£");
+    strcpy(produced_menu[24],"â•šâ•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•©â•");
+    strcpy(produced_menu[25],"æ“ä½œæ–¹æ³•ï¼š â†‘â†“é”®ç§»åŠ¨å…‰æ ‡ Zé”®ç¡®å®š");
     for(i=1;i<=25;i++)
         printf("%s",produced_menu[i]);
 }
@@ -313,16 +313,16 @@ void make_team()
 {
     int i;
     system("cls");
-    printf("ÏµÍ³×Ô¶¯×é¶ÓÖĞ£¬ÇëÉÔµÈ¡­¡­\n");
+    printf("ç³»ç»Ÿè‡ªåŠ¨ç»„é˜Ÿä¸­ï¼Œè¯·ç¨ç­‰â€¦â€¦\n");
     wait(1000);
     divide();
     system("cls");
-    printf("×é¶ÓÍê±Ï£¬¶ÓÎéÃûµ¥:\n");
+    printf("ç»„é˜Ÿå®Œæ¯•ï¼Œé˜Ÿä¼åå•:\n");
     for(i=1;i<=n;i++)
     {
-        printf("%s:¶ÓÎé%d\n",player[i].name,player[i].team);
+        printf("%s:é˜Ÿä¼%d\n",player[i].name,player[i].team);
     }
-    printf("Çë°´ÈÎÒâ¼ü¼ÌĞø¡­¡­\n");
+    printf("è¯·æŒ‰ä»»æ„é”®ç»§ç»­â€¦â€¦\n");
     getch();
 }
 int randomselect()
@@ -330,7 +330,7 @@ int randomselect()
     srand((unsigned)time(NULL));
     int i,j,k,l;
     psc();
-    printf("ÏµÍ³×Ô¶¯²ÂÈ­ÖĞ£¬ÇëÉÔºò¡­¡­");
+    printf("ç³»ç»Ÿè‡ªåŠ¨çŒœæ‹³ä¸­ï¼Œè¯·ç¨å€™â€¦â€¦");
     wait(1000); 
     k=rand()%(livenum-1)+1;
     memset(mark,0,sizeof(mark));
@@ -351,7 +351,7 @@ int randomselect()
         }
         printf("%s ",player[j].name);
     }
-    printf("»ñµÃ²ÂÈ­Ê¤Àû£¡");
+    printf("è·å¾—çŒœæ‹³èƒœåˆ©ï¼");
     getch();
     return k;
 }
@@ -367,7 +367,7 @@ void deathjudge(int j)
         player[j].poison=false;
         map[player[j].x][player[j].y]=0;
         psc();
-        printf("Íæ¼Ò%sËÀÍö£¡",player[j].name);
+        printf("ç©å®¶%sæ­»äº¡ï¼",player[j].name);
         getch();
         if(!team[player[j].team])
         flag=1;
@@ -439,12 +439,12 @@ void nattack(int j)
     memset(nmark,0,sizeof(nmark));
     if(!ntable(j))
     {
-        printf("Ã»ÓĞ¿É¹¥»÷µÄ¶ÔÏó£¡");
+        printf("æ²¡æœ‰å¯æ”»å‡»çš„å¯¹è±¡ï¼");
         getch();
         return ;
     }
     psc();
-    printf("ÇëÑ¡Ôñ¹¥»÷µÄ¶ÔÏó£º\n");
+    printf("è¯·é€‰æ‹©æ”»å‡»çš„å¯¹è±¡ï¼š\n");
     for(i=1;i<=n;i++)
     {
         if(nmark[i])
@@ -452,7 +452,7 @@ void nattack(int j)
             printf("%d-%s ",i,player[i].name);
         }
     }
-    printf("7-È¡Ïû\n");
+    printf("7-å–æ¶ˆ\n");
     inputf(k);
     while(k<0||k>7||((!(*(nmark+k)))&&k!=7))
     {
@@ -489,12 +489,12 @@ void mattack(int j)
     memset(mamark,0,sizeof(mamark));
     if(!mtable(j))
     {
-        printf("Ã»ÓĞ¿É¹¥»÷µÄ¶ÔÏó£¡");
+        printf("æ²¡æœ‰å¯æ”»å‡»çš„å¯¹è±¡ï¼");
         getch();
         return ;
     }
     psc(); 
-    printf("ÇëÑ¡Ôñ¹¥»÷µÄÄ¿±ê£¡\n");
+    printf("è¯·é€‰æ‹©æ”»å‡»çš„ç›®æ ‡ï¼\n");
     for(i=1;i<=n;i++)
     {
         if(mamark[i])
@@ -502,7 +502,7 @@ void mattack(int j)
             printf("%d-%s ",i,player[i].name);
         }
     }
-    printf("7-È¡Ïû\n");
+    printf("7-å–æ¶ˆ\n");
     k=getch()-'0';
     while(k<=0||k>7||((!(*(mamark+k)))&&k!=7))
     {
@@ -542,12 +542,12 @@ void pattack(int j)
     memset(pmark,0,sizeof(pmark));
     if(!ptable(j))
     {
-        printf("Ã»ÓĞ¿É¹¥»÷µÄ¶ÔÏó£¡");
+        printf("æ²¡æœ‰å¯æ”»å‡»çš„å¯¹è±¡ï¼");
         getch();
         return ;
     }
     psc();
-    printf("ÇëÑ¡Ôñ¹¥»÷µÄÄ¿±ê£¡\n");
+    printf("è¯·é€‰æ‹©æ”»å‡»çš„ç›®æ ‡ï¼\n");
     for(i=1;i<=n;i++)
     {
         if(pmark[i])
@@ -555,7 +555,7 @@ void pattack(int j)
             printf("%d-%s ",i,player[i].name);
         }
     }
-    printf("7-È¡Ïû\n");
+    printf("7-å–æ¶ˆ\n");
     inputf(k);
     while(k<=0||k>7||((!(*(pmark+k)))&&k!=7))
     {
@@ -619,7 +619,7 @@ void srecover(int j)
     memset(srmark,0,sizeof(srmark));
     srtable(j);
     psc();
-    printf("ÇëÑ¡Ôñ»Ø¸´µÄÄ¿±ê£¡\n");
+    printf("è¯·é€‰æ‹©å›å¤çš„ç›®æ ‡ï¼\n");
     for(i=1;i<=n;i++)
     {
         if(srmark[i])
@@ -627,7 +627,7 @@ void srecover(int j)
             printf("%d-%s ",i,player[i].name);
         }
     }
-    printf("7-È¡Ïû\n");
+    printf("7-å–æ¶ˆ\n");
     inputf(k);
     while(k<=0||k>7||((!(*(srmark+k)))&&k!=7))
     {
@@ -644,7 +644,7 @@ void ttable(int j)
 {
     if(!map[px-1][py])
     {
-        printf("1-¡ü ");
+        printf("1-â†‘ ");
         tmark[1]=1;
         mspeed[1]++;
         if((player[j].p==4||player[j].movespeed)&&!map[px-2][py])
@@ -660,7 +660,7 @@ void ttable(int j)
     }
     if(!map[px+1][py])
     {
-        printf("2-¡ı ");
+        printf("2-â†“ ");
         tmark[2]=1;
         mspeed[2]++;
         if((player[j].p==4||player[j].movespeed)&&!map[px+2][py])
@@ -676,7 +676,7 @@ void ttable(int j)
     }
     if(!map[px][py-1])
     {
-        printf("3-¡û ");
+        printf("3-â† ");
         tmark[3]=1;
         mspeed[3]++;
         if((player[j].p==4||player[j].movespeed)&&!map[px][py-2])
@@ -692,7 +692,7 @@ void ttable(int j)
     }
     if(!map[px][py+1])
     {
-        printf("4-¡ú ");
+        printf("4-â†’ ");
         tmark[4]=1;
         mspeed[4]++;
         if((player[j].p==4||player[j].movespeed)&&!map[px][py+2])
@@ -710,7 +710,7 @@ void ttable(int j)
     {
         if(!map[px-1][py-1])
         {
-            printf("5-¨I ");
+            printf("5-â†– ");
             tmark[5]=1;
             mspeed[5]++;
             if(player[j].movespeed&&!map[px-2][py-2])
@@ -722,7 +722,7 @@ void ttable(int j)
         }
         if(!map[px-1][py+1])
         {
-            printf("6-¨J ");
+            printf("6-â†— ");
             tmark[6]=1;
             mspeed[6]++;
             if(player[j].movespeed&&!map[px-2][py+2])
@@ -734,7 +734,7 @@ void ttable(int j)
         }
         if(!map[px+1][py-1])
         {
-            printf("7-¨L ");
+            printf("7-â†™ ");
             tmark[7]=1;
             mspeed[7]++;
             if(player[j].movespeed&&!map[px+2][py-2])
@@ -746,7 +746,7 @@ void ttable(int j)
         }
         if(!map[px+1][py+1])
         {
-            printf("8-¨K ");
+            printf("8-â†˜ ");
             tmark[8]=1;
             mspeed[8]++;
             if(player[j].movespeed&&!map[px+2][py+2])
@@ -764,9 +764,9 @@ void transform(int j)
     memset(tmark,0,sizeof(tmark));
     memset(mspeed,0,sizeof(mspeed));
     psc();
-    printf("ÇëÑ¡ÔñÄãÏëÒÆ¶¯µÄ·½Ïò\n");
+    printf("è¯·é€‰æ‹©ä½ æƒ³ç§»åŠ¨çš„æ–¹å‘\n");
     ttable(j);
-    printf("9-È¡Ïû\n");
+    printf("9-å–æ¶ˆ\n");
     k=getch()-'0';
     while(k<=0||k>9||(!(*(tmark+k))&&k!=9))
     {
@@ -779,7 +779,7 @@ void transform(int j)
     else
     {
         psc();
-        printf("ÇëÊäÈëÒÆ¶¯µÄ²½Êı£¬9-È¡Ïû\n"); 
+        printf("è¯·è¾“å…¥ç§»åŠ¨çš„æ­¥æ•°ï¼Œ9-å–æ¶ˆ\n"); 
         l=getch()-'0';
         while((l<=0||l>mspeed[k])&&l!=9)
         {
@@ -833,7 +833,7 @@ void save()
     while(1)
     {
         psc();
-        printf("ÇëÊäÈëµµ°¸Ãû³Æ£¬ÊäÈë\"/back\"·µ»Ø£º\n");
+        printf("è¯·è¾“å…¥æ¡£æ¡ˆåç§°ï¼Œè¾“å…¥\"/back\"è¿”å›ï¼š\n");
         memset(input,0,sizeof(input)); 
         scanf("%s",input);
         if(!strcmp(input,"/back"))
@@ -842,7 +842,7 @@ void save()
         if(k>20)
         {
             psc();
-            printf("ÊäÈëÃû³Æ¹ı³¤£¡");
+            printf("è¾“å…¥åç§°è¿‡é•¿ï¼");
             getch();
             continue;
         }
@@ -850,7 +850,7 @@ void save()
         if(fp=fopen(input,"r"))
         {
             psc();
-            printf("È·¶¨Òª¸²¸Ç´æµµ£¿Y/N");
+            printf("ç¡®å®šè¦è¦†ç›–å­˜æ¡£ï¼ŸY/N");
             k=getch();
             while(k!='n'&&k!='N'&&k!='y'&&k!='Y') k=getch();
             if(k=='n'||k=='N')
@@ -858,11 +858,11 @@ void save()
         }
         if(fp) fclose(fp);
         psc();
-        printf("ÕıÔÚ´æµµÖĞ£¬Çë²»Òª¹Ø±ÕµçÔ´...");
+        printf("æ­£åœ¨å­˜æ¡£ä¸­ï¼Œè¯·ä¸è¦å…³é—­ç”µæº...");
         data_save();
         wait(10000);
         psc();
-        printf("´æµµÍê±Ï£¡");
+        printf("å­˜æ¡£å®Œæ¯•ï¼");
         getch();
         break;
     }
@@ -871,7 +871,7 @@ void surrender(int j)
 {
     int k;
     psc();
-    printf("È·¶¨ÒªÈÏÊä£¿Y/N\n");
+    printf("ç¡®å®šè¦è®¤è¾“ï¼ŸY/N\n");
     k=getch();
     while(k!='y'&&k!='Y'&&k!='n'&&k!='N')
     {
@@ -888,40 +888,40 @@ void move(int j)
     while(1)
     {
         psc();
-        printf("%sÒª×öÊ²Ã´£¿Ê£ÓàĞĞ¶¯´ÎÊı£º%d\n",player[j].name,player[j].movechance);
+        printf("%sè¦åšä»€ä¹ˆï¼Ÿå‰©ä½™è¡ŒåŠ¨æ¬¡æ•°ï¼š%d\n",player[j].name,player[j].movechance);
         memset(mmark,0,sizeof(mmark));
         if(player[j].p!=6)
         {
-             printf("1-¹¥»÷ ");
+             printf("1-æ”»å‡» ");
              mmark[1]=1;
         }
         else
         {
-            printf("5-µ¥Ìå»Ø¸´ ");
+            printf("5-å•ä½“å›å¤ ");
             mmark[5]=1;
             if(player[j].multi_recover)
             {
                 mmark[6]=1;
-                printf("6-ÈºÌå»Ø¸´ ");
+                printf("6-ç¾¤ä½“å›å¤ ");
             }
         }
         if(player[j].p==3)
         if(player[j].power==false)
         {
-             printf("2-ĞîÆø ");
+             printf("2-è“„æ°” ");
              mmark[2]=1;
         }
         else
         {
-            printf("3-Ä§·¨¹¥»÷ ");
+            printf("3-é­”æ³•æ”»å‡» ");
             mmark[3]=1;
         }
         if(player[j].p==5) 
         {
-            printf("4-¾ç¶¾¹¥»÷ ");
+            printf("4-å‰§æ¯’æ”»å‡» ");
             mmark[4]=1;
         }
-        printf("7-ÒÆ¶¯ 8-´æµµ 9-·ÅÆú 0-ÈÏÊä\n");
+        printf("7-ç§»åŠ¨ 8-å­˜æ¡£ 9-æ”¾å¼ƒ 0-è®¤è¾“\n");
         mmark[7]=1;
         mmark[8]=1; 
         mmark[9]=1;
@@ -958,54 +958,54 @@ void levelup(int j)
     player[j].lv++;
     memset(lmark,0,sizeof(lmark));
     psc();
-    printf("ÇëÑ¡ÔñÉı¼¶ÏîÄ¿\n");
+    printf("è¯·é€‰æ‹©å‡çº§é¡¹ç›®\n");
     if((player[j].p==1&&player[j].attack<6)||(player[j].p>1&&player[j].p<7&&player[j].attack<3))
     {
         if(player[j].p!=6)
-        printf("1-¹¥»÷Á¦ ");
+        printf("1-æ”»å‡»åŠ› ");
         else
-        printf("1-»Ø¸´Á¦ ");
+        printf("1-å›å¤åŠ› ");
         lmark[1]=1;
     }
     if((player[j].p==2&&player[j].range<4)||(player[j].p==3&&!player[j].range))
     {
         if(player[j].p==2)
-        printf("2-¹¥»÷¾àÀë ");
+        printf("2-æ”»å‡»è·ç¦» ");
         else
-        printf("2-Ä§·¨¾àÀë ");
+        printf("2-é­”æ³•è·ç¦» ");
         lmark[2]=1;
     }
     if(player[j].p!=2&&player[j].d_attack==false)
     {
         if(player[j].p!=6)
-        printf("3-Ğ±½Ç¹¥»÷ ");
+        printf("3-æ–œè§’æ”»å‡» ");
         else
-        printf("3-Ğ±½Ç»Ø¸´ "); 
+        printf("3-æ–œè§’å›å¤ "); 
         lmark[3]=1;
     }
     if(player[j].p==3&&player[j].mattack<2)
     {
-        printf("4-Ä§·¨¹¥»÷Á¦ ");
+        printf("4-é­”æ³•æ”»å‡»åŠ› ");
         lmark[4]=1;
     }
     if(player[j].p==6&&player[j].multi_recover==false)
     {
-        printf("5-ÈºÌå»Ø¸´ ");
+        printf("5-ç¾¤ä½“å›å¤ ");
         lmark[5]=1;
     }
     if(player[j].p==5&&player[j].p_round<3)
     {
-        printf("6-ÖĞ¶¾»ØºÏ ");
+        printf("6-ä¸­æ¯’å›åˆ ");
         lmark[6]=1;
     }
     if((player[j].p==1&&!player[j].movespeed)||(player[j].p==4&&player[j].movespeed<2))
     {
-        printf("7-ÒÆ¶¯¾àÀë ");
+        printf("7-ç§»åŠ¨è·ç¦» ");
         lmark[7]=1;
     }
     if((player[j].p==4)&&player[j].d_move==false)
     {
-        printf("8-Ğ±½ÇÒÆ¶¯ ");
+        printf("8-æ–œè§’ç§»åŠ¨ ");
         lmark[8]=1;
     }
     if((player[j].p==6&&player[j].maxhp<24)||(player[j].maxhp<20))
@@ -1045,11 +1045,11 @@ void game_start()
     {
         make_team();
         system("cls");
-        printf("Ëæ»ú·ÖÅäÎ»ÖÃÖĞ£¬ÇëÉÔºò¡­¡­");
+        printf("éšæœºåˆ†é…ä½ç½®ä¸­ï¼Œè¯·ç¨å€™â€¦â€¦");
         wait(1000);
         reset();
         psc();
-        printf("Î»ÖÃ·ÖÅäÍê±Ï£¬Çë°´ÈÎÒâ¼ü¼ÌĞø¡­¡­");
+        printf("ä½ç½®åˆ†é…å®Œæ¯•ï¼Œè¯·æŒ‰ä»»æ„é”®ç»§ç»­â€¦â€¦");
         getch();
         flag=0;
         while(1)
@@ -1084,7 +1084,7 @@ void game_start()
             {
                 psc();
                 l=team[1]?1:2;
-                printf("¶ÓÎé%d»ñµÃÊ¤Àû£¡",l);
+                printf("é˜Ÿä¼%dè·å¾—èƒœåˆ©ï¼",l);
                 getch();
                 for(i=1;i<=n;i++)
                 {
@@ -1092,7 +1092,7 @@ void game_start()
                     {
                         lflag=0;
                         psc();
-                        printf("Íæ¼Ò%sÉı¼¶£¡",player[i].name);
+                        printf("ç©å®¶%så‡çº§ï¼",player[i].name);
                         getch();
                         while(1)
                         {
@@ -1112,16 +1112,16 @@ void game_intitialize()
     int i;
     srand((unsigned)time(NULL));
     system("cls");
-    printf("ÇëÊäÈëÍæ¼ÒÈËÊı£º");
+    printf("è¯·è¾“å…¥ç©å®¶äººæ•°ï¼š");
     while(inputff(n),(n<=1||n>6))
     {
-        printf("ÓÎÏ·ÈËÊı2~6ÈË£¬ÇëÖØĞÂÊäÈë£º"); 
+        printf("æ¸¸æˆäººæ•°2~6äººï¼Œè¯·é‡æ–°è¾“å…¥ï¼š"); 
     }
     system("cls");
-    printf("ÇëÊäÈë¸÷Íæ¼ÒÃû³Æ(½öÏŞÒ»¸ö×Ö)\n");
+    printf("è¯·è¾“å…¥å„ç©å®¶åç§°(ä»…é™ä¸€ä¸ªå­—)\n");
     for(i=1;i<=n;i++)
     {
-        printf("Íæ¼Ò%d£º",i);
+        printf("ç©å®¶%dï¼š",i);
         scanf("%s",player[i].name);
         if(!player[i].name[1])
         player[i].name[1]=' ';
@@ -1162,7 +1162,7 @@ void load()
     while(1)
     {
         system("cls");
-        printf("ÇëÊäÈëµµ°¸Ãû³Æ£¬ÊäÈë\"/back\"·µ»Ø£º\n");
+        printf("è¯·è¾“å…¥æ¡£æ¡ˆåç§°ï¼Œè¾“å…¥\"/back\"è¿”å›ï¼š\n");
         memset(input,0,sizeof(input)); 
         scanf("%s",input);
         if(!strcmp(input,"/back"))
@@ -1171,7 +1171,7 @@ void load()
         if(k>20)
         {
             system("cls");
-            printf("ÊäÈëÃû³Æ¹ı³¤£¡");
+            printf("è¾“å…¥åç§°è¿‡é•¿ï¼");
             getch();
             continue;
         }
@@ -1180,7 +1180,7 @@ void load()
         if(fp==NULL)
         {
             system("cls");
-            printf("Ã»ÓĞÕÒµ½µµ°¸£¬ÇëÖØĞÂÊäÈë£¡");
+            printf("æ²¡æœ‰æ‰¾åˆ°æ¡£æ¡ˆï¼Œè¯·é‡æ–°è¾“å…¥ï¼");
             fclose(fp);
             getch();
             continue;
@@ -1200,37 +1200,37 @@ void load()
             fscanf(fp,"%d",&temp.multi_recover);
             fscanf(fp,"%d",&temp.p_round);
             fscanf(fp,"%d",&temp.lv);
-            printf("Íæ¼Ò%d:%s Lv.%d %s HP:%d ",i,temp.name,temp.lv,pname[temp.p],temp.maxhp);
+            printf("ç©å®¶%d:%s Lv.%d %s HP:%d ",i,temp.name,temp.lv,pname[temp.p],temp.maxhp);
             if(temp.p!=6)
-            printf("¹¥»÷Á¦:%d ",temp.attack);
+            printf("æ”»å‡»åŠ›:%d ",temp.attack);
             else
-            printf("»Ø¸´Á¦:%d ",temp.attack);
+            printf("å›å¤åŠ›:%d ",temp.attack);
             if(temp.p==3)
-            printf("Ä§·¨¹¥»÷Á¦:%d ",temp.mattack+2);
+            printf("é­”æ³•æ”»å‡»åŠ›:%d ",temp.mattack+2);
             printf("\n");
             switch(temp.p)
             {
-                case 1:printf("Ğ±½Ç¹¥»÷:%s ÒÆ¶¯¾àÀë:%d\n",cbool[temp.d_attack],temp.movespeed+1);break;
-                case 2:printf("¹¥»÷¾àÀë:%d\n",temp.range+2);break;
-                case 3:printf("Ğ±½Ç¹¥»÷:%s Ä§·¨¾àÀë:%d\n",cbool[temp.d_attack],temp.range+2);break;
-                case 4:printf("Ğ±½Ç¹¥»÷:%s ÒÆ¶¯¾àÀë:%d Ğ±½ÇÒÆ¶¯:%s\n",cbool[temp.d_attack],temp.movespeed+2,cbool[temp.d_move]);break;
-                case 5:printf("ÖĞ¶¾»ØºÏ:%d Ğ±½Ç¹¥»÷:%s\n",temp.p_round+2,cbool[temp.d_attack]);break;
-                case 6:printf("Ğ±½Ç»Ø¸´:%s ÈºÌå»Ø¸´:%s\n",cbool[temp.d_attack],cbool[temp.multi_recover]);break;
+                case 1:printf("æ–œè§’æ”»å‡»:%s ç§»åŠ¨è·ç¦»:%d\n",cbool[temp.d_attack],temp.movespeed+1);break;
+                case 2:printf("æ”»å‡»è·ç¦»:%d\n",temp.range+2);break;
+                case 3:printf("æ–œè§’æ”»å‡»:%s é­”æ³•è·ç¦»:%d\n",cbool[temp.d_attack],temp.range+2);break;
+                case 4:printf("æ–œè§’æ”»å‡»:%s ç§»åŠ¨è·ç¦»:%d æ–œè§’ç§»åŠ¨:%s\n",cbool[temp.d_attack],temp.movespeed+2,cbool[temp.d_move]);break;
+                case 5:printf("ä¸­æ¯’å›åˆ:%d æ–œè§’æ”»å‡»:%s\n",temp.p_round+2,cbool[temp.d_attack]);break;
+                case 6:printf("æ–œè§’å›å¤:%s ç¾¤ä½“å›å¤:%s\n",cbool[temp.d_attack],cbool[temp.multi_recover]);break;
             }
 
         }
         fclose(fp);
-        printf("È·¶¨Òª´ÓÕâ¸öµµ°¸¿ªÊ¼ÓÎÏ·£¿Y/N");
+        printf("ç¡®å®šè¦ä»è¿™ä¸ªæ¡£æ¡ˆå¼€å§‹æ¸¸æˆï¼ŸY/N");
         k=getch();
         while(k!='n'&&k!='N'&&k!='y'&&k!='Y') k=getch();
         if(k=='n'||k=='N')
         continue;
         system("cls");
-        printf("ÕıÔÚ¶ÁµµÖĞ£¬ÇëÉÔºò...");
+        printf("æ­£åœ¨è¯»æ¡£ä¸­ï¼Œè¯·ç¨å€™...");
         data_load();
         wait(10000);
         system("cls");
-        printf("¶ÁµµÍê±Ï£¡");
+        printf("è¯»æ¡£å®Œæ¯•ï¼");
         getch();
         game_start();
         break;
